@@ -1,6 +1,4 @@
 .App {
-  position: fixed;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -16,17 +14,23 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Content-container {
+    animation: App-logo-spin 0.5s linear;
   }
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: translate(-200px);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(0);
+  }
+  from {
+    transform: translate(20px);
+  }
+  to {
+    transform: translate(0);
   }
 }
 
@@ -67,17 +71,18 @@
 }
 
 .Icons-container {
-  padding-right: 25px;
   width: 33%;
   position: relative;
-  justify-self: end;
+  display: flex;
+  justify-self: right;
+  justify-content: right;
   align-self: center;
   align-content: center;
 }
 
 .Icons-row{
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: right;
+  justify-self: end;
   align-content: center ;
 }
 
@@ -85,7 +90,7 @@
   display: flex;
   width:64px;
   height: 64px;
-  margin: 3px;
+  margin: 1px;
   background-color: black;
   justify-content: center;
 }
@@ -142,10 +147,9 @@
 .Content-container {
   display: flex;
   margin: 0;
-  width: 95%;
-  height: 98%;
-  border: 1px solid white;
-  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
   align-self: center;
   background-color: black;
   overflow: hidden;
@@ -163,7 +167,7 @@
   width: inherit;
   height: inherit;
   background-color: black;
-  opacity: 70%;
+  opacity: 30%;
   align-content: center;
   justify-content: center;
   border-radius: 12px;
@@ -186,17 +190,6 @@
 
 .Overlay-icon {
   stroke: none;
-}
-
-.Content-title {
-  /* display: flex;
-  position: relative;
-  justify-content: center;
-  width: inherit;
-  font-family: Arial, Helvetica, sans-serif;
-  font: Helvetica 400 normal 30px 35.15px;
-  font-size: 20px;
-  padding-top: 2%; */
 }
 
 .Content-body {
