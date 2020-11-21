@@ -33,14 +33,14 @@ export const Creations = () => {
         {/* Amper Card */}
         <MDBCard
           style={{
-            width: "15rem",
-            height: "18rem",
-            padding: "10px",
+            width: "20rem",
+            height: "25rem",
+            padding: "20px",
             color: "black",
             justifyContent: "center",
           }}
         >
-          <MDBCardImage className="img-fluid" src={AmperLogo} waves top />
+          <a href="https://www.ampermusic.com/"><MDBCardImage className="img-fluid" src={AmperLogo} waves top /></a>
           <MDBCardBody>
             Built algorithms/lua libraries for realistic human performance by
             Amper's AI! Check it out/demo amper
@@ -66,7 +66,7 @@ export const Creations = () => {
           </MDBCardBody>
         </MDBCard>
         <div style={{width: "100%", height: '3rem'}}></div>
-        <h2>Plenty of things in the works. Check back soon for more, or <a href=""><Link to="/resume">check out my resume</Link></a></h2>
+        <h2>Plenty of things in the works. Check back soon for more, or <Link to="/resume">check out my resume</Link></h2>
       </Container>
     </div>
   );

@@ -23,7 +23,7 @@ export const Music = () => {
         style={{
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around",
+          justifyContent: "space-evenly",
           overflow: "hidden",
         }}
       >

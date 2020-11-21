@@ -21,7 +21,7 @@ export const LandingPage = () => {
         overflow: 'hidden'
       }}
     >
-      <img src={Background} style={{opacity: '70%', height: '120%'}} alt="background" />
+      <img src={Background} style={{opacity: '70%', height: '150%'}} alt="background" />
       <div
         className="Landing-text"
         style={{

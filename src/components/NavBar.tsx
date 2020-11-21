@@ -9,7 +9,7 @@ export const NavBar = () => {
   }
   return (
     <div>
-        <MDBNavbar style={{backgroundColor: 'black'}} dark expand="xs" fixed="top">
+        <MDBNavbar style={{backgroundColor: 'black'}} dark expand="xs">
           <MDBNavbarToggler onClick={handleClick}></MDBNavbarToggler>
           <MDBCollapse isOpen={collapse} navbar>
             <MDBNavbarNav left>
